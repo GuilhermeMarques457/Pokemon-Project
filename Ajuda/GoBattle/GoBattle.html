@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBattle</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="GoBattle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="cabeca">
+          <div>
+            <div class="bonitinho">
+              <div class="dropdown home" id="home">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </button>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pokedex
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Kanto</a></li>
+                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                  <li><a class="dropdown-item" href="#">Unova</a></li>
+                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                  <li><a class="dropdown-item" href="#">NationalDex</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ajuda
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li>
+                    <a class="dropdown-item" href="#">Equipe Go rocket</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Raids</a></li>
+                  <li><a class="dropdown-item" href="#">Ginasios</a></li>
+                  <li><a class="dropdown-item" href="#">Go battle</a></li>
+                  <li><a class="dropdown-item" href="#">Itens</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600"
+              height="100"
+            />
+          </div>
+          <div>
+            <div class="bonitinho" id="usado">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GoBattle
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li>
+                    <a class="dropdown-item" id="selecionado" href="#"
+                      >Como jogar</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Times recomendados</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Classificações</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                  <details open>
+                    <summary>Ligas</summary>
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"
+                        width="45"
+                      />Great League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"
+                        width="45"
+                      />Ultra League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"
+                        width="45"
+                      />Master League</a
+                    >
+                  </details>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li><a class="dropdown-item" href="#">Dia comunitario</a></li>
+                  <li><a class="dropdown-item" href="#">Go Fest 2023</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Hora do holofone</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Noite de batalha GO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Saiba mais
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li>
+                    <a class="dropdown-item" href="#">Entre em contato</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Referencias</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <article>
+          <h1>Go Battle League</h1>
+          <div class="introducao">
+            <div>
+              <h2>Será que você está apto?</h2>
+              <p>
+                Se você encontrou muitos Pokémon, ja dominou a arte do Curveball
+                ao longo do caminho. se você participou de todas as tarefas de
+                pesquisa do Professor Willow, expandindo seu conhecimento à
+                medida que descobre mais Pokémon. Se você evoluiu seus Pokémons
+                usando todos os itens disponíveis, desde Sun Stones até Glacial
+                Lure Modules e tudo mais. Se você desafiou Pokémon lendários em
+                ataques, estudando suas fraquezas ao longo do caminho.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://pokemongolive.com/img/posts/gobattleleague-announcement-2.jpg"
+                width="830"
+              />
+            </div>
+            <div>
+              <h2>O que agora?</h2>
+              <p>
+                Depois de todo esse esforço, qual é o próximo passo em seu
+                caminho como treinador de Pokémon GO? Como você pode provar que
+                seus Pokémon são os melhores que podem ser, enquanto aumenta sua
+                compreensão dos Pokémon?
+              </p>
+              <p>
+                É hora de entrar na Liga de Batalha GO. Coloque seu conhecimento
+                e habilidade contra seus colegas Treinadores para obter glória,
+                Stardust, encontros com Pokémon e outras recompensas dignas de
+                seu tempo e habilidade.
+              </p>
+            </div>
+            <div>
+              <p>
+                Começar na GO Battle League pode parecer intimidante
+                inicialmente, mas as batalhas em ritmo acelerado são divertidas
+                - você se verá adquirindo a experiência e o conhecimento para
+                lutar como um profissional. Continue lendo para aprender tudo o
+                que você precisa saber para começar e subir rapidamente na
+                hierarquia, desde como o sistema da Liga de Batalha GO funciona
+                até o que você deve considerar ao montar sua equipe. Você será
+                um lutador experiente em pouco tempo!
+              </p>
+              <p>
+                Alguns topicos a serem relevados antes de começar a trilhar esse
+                caminho em busca do prestigio:
+              </p>
+              <div>
+                <a href="#desbloquear">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>Como desbloquear batalhas</p>
+              </div>
+              <div>
+                <a href="#contrucao">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>
+                  Como construir uma equipe equilibrada para batalhas de
+                  treinador
+                </p>
+              </div>
+              <div>
+                <a href="#escolherPokemon">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>
+                  Como escolher o Pokémon perfeito para batalhas de treinador
+                </p>
+              </div>
+              <div>
+                <a href="#aumentarRank">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>
+                  Como aumentar sua classificação e recompensas de classificação
+                </p>
+              </div>
+              <div>
+                <a href="#rotacao">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>
+                  Rotações da Liga: Great League, Ultra League, Master League e
+                  mais
+                </p>
+              </div>
+              <div>
+                <a href="#preparar">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                    class="rotacaoPoke"
+                  />
+                </a>
+                <p>
+                  Como se preparar para a batalha: treinamento, segundo ataque
+                  carregado e TMs
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="ajudas">
+            <div id="desbloquear">
+              <h2>Como desbloquear batalhas</h2>
+              <img
+                src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/strategy/go/battle-league/inline/03.png"
+                alt="goBattle"
+              />
+              <p>
+                Você pode acessar a Liga de Batalha GO tocando no ícone da
+                Pokébola na parte inferior central da tela. Você verá a opção
+                Batalha no meio da tela do lado direito. Toque na opção Batalha
+                e bem-vindo à Liga de Batalha GO!
+              </p>
+              <p>
+                Depois de selecionar em qual liga ou copa você quer lutar, você
+                selecionará uma equipe de três Pokémon e será combinado com
+                outro treinador competindo em uma classificação semelhante.
+                Mesmo se você estiver apenas começando, não precisará se
+                preocupar em lutar contra um Treinador que já acumulou muitas
+                vitórias na Liga de Batalha GO.
+              </p>
+            </div>
+            <div id="contrucao">
+              <h2>
+                Como construir uma equipe equilibrada para batalhas de treinador
+              </h2>
+              <p>
+                Para melhorar suas chances de ganhar, você deve selecionar uma
+                equipe de Pokémon que compense a fraqueza um do outro. Por
+                exemplo, você não gostaria de entrar em uma Trainer Battle com
+                três Pokémon que são fracos para ataques do tipo Fire e correm o
+                risco de ter todo o seu time derrotado por um único Charizard.
+              </p>
+              <p>Alguns exemplos de tipagens suplementares:</p>
+              <div>
+                <div>
+                  <p class="water">Water</p>
+                  <p class="ground">Ground</p>
+                </div>
+                <div>
+                  <p class="steel">Steel</p>
+                  <p class="bug">Bug</p>
+                </div>
+                <div>
+                  <p class="steel">Steel</p>
+                  <p class="fairy">Fairy</p>
+                </div>
+                <div>
+                  <p class="water">Water</p>
+                  <p class="fairy">Fairy</p>
+                </div>
+              </div>
+              <p>Tipagens que voce deve evitar em conjunto:</p>
+              <div>
+                <div>
+                  <p class="grass">Grass</p>
+                  <p class="bug">Bug</p>
+                </div>
+                <div>
+                  <p class="rock">Rock</p>
+                  <p class="steel">Steel</p>
+                </div>
+                <div>
+                  <p class="grass">Grass</p>
+                  <p class="psychic">Psychic</p>
+                </div>
+              </div>
+              <p>
+                Também é crucial considerar quais Pokémon seus oponentes
+                provavelmente usarão. Cada liga tem alguns Pokémon que são
+                favorecidos por muitos competidores. Se você é fã desses
+                Pokémon, talvez queira apresentá-los em suas próprias equipes.
+                Mas, quer você use ou não o Pokémon mais popular, é importante
+                garantir que você tenha Pokémon em sua equipe que também possam
+                se opor a esses Pokémon populares.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="ajuda2">
+            <div id="escolherPokemon">
+              <h2>
+                Como escolher o Pokémon perfeito para batalhas de treinador
+              </h2>
+              <p>
+                Diferentemente das raids que voce deve dar o maximo de dano
+                possivelNas Batalhas de Treinador, você deve valorizar uma
+                distribuição mais uniforme entre ataque e defesa. As Batalhas de
+                Treinador na Liga de Batalha GO são uma corrida para derrotar
+                três Pokémon antes que seus três Pokémon desmaiem, então receber
+                menos dano é tão valioso quanto causar mais.
+              </p>
+              <p>
+                Outro elemento-chave a considerar é que nem todos os Ataques
+                Rápidos carregam energia na mesma taxa. Pokémon com Ataques
+                Rápidos que carregam energia rapidamente podem distribuir seus
+                Ataques Carregados mais cedo, pressionando o oponente a explodir
+                seus dois Protect Shields. Por exemplo, Swampert é amplamente
+                usado porque pode carregar energia rapidamente usando seu Ataque
+                Rápido de Tiro de Lama.
+              </p>
+              <div>
+                <p>
+                  Ataques como: Lock-on, mud-shot, poison sting sao inuteis em
+                  raids, porem em batalhas pokemon eles sao os mais
+                  prestijigados
+                </p>
+              </div>
+            </div>
+            <div id="aumentarRank">
+              <h2>
+                Como aumentar sua classificação e recompensas de classificação
+              </h2>
+              <p>
+                Todos começam sua jornada na GO Battle League no nível 1. Você
+                progredirá nas primeiras posições apenas completando as
+                batalhas, independentemente de ganhar ou perder. Mas você logo
+                descobrirá que é necessário vencer batalhas para continuar
+                subindo na hierarquia. Quando você atingir as classificações
+                mais altas, poderá ver sua classificação, que é uma
+                representação numérica do seu desempenho. Se você está tentando
+                ser um dos melhores, fique de olho na classificação Legend - a
+                classificação mais alta possível na Liga de Batalha GO.
+              </p>
+              <p>
+                Atualmente, a GO Battle League é composta por 24 classificações:
+                1-20 são numeradas, com as próximas quatro classificações sendo
+                elas:
+              </p>
+              <div>
+                <div>
+                  <p id="ace">Ace</p>
+                  <img
+                    src="https://ilovevg.it/wp-content/uploads/2020/12/CombatRank21.png"
+                    alt="Ace"
+                  />
+                </div>
+                <div>
+                  <p id="veteran">Veteran</p>
+                  <img
+                    src="https://ilovevg.it/wp-content/uploads/2020/12/CombatRank22.png"
+                    alt="Veteran"
+                  />
+                </div>
+                <div>
+                  <p id="expert">Expert</p>
+                  <img
+                    src="https://ilovevg.it/wp-content/uploads/2020/12/CombatRank23.png"
+                    alt="Expert"
+                  />
+                </div>
+                <div>
+                  <p id="legend">Legend</p>
+                  <img
+                    src="https://ilovevg.it/wp-content/uploads/2020/12/CombatRank24.png"
+                    alt="Legend"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ajuda3">
+          <div id="rotacao">
+            <h2>Rotações da Liga: Great League, Ultra League, Master League</h2>
+            <p>
+              As Batalhas de Treinador no Pokémon GO têm três ligas principais,
+              cada uma com seu próprio limite de CP. A GO Battle League
+              geralmente apresenta apenas uma dessas ligas por vez, alternando
+              entre elas periodicamente durante cada temporada.
+            </p>
+            <div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <img
+                      src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"
+                    />
+                    <span class="copas">Great League</span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Cada nova temporada da GO Battle League começa com a Great
+                      League, que é a liga mais fácil de começar porque apenas
+                      Pokémon com 1.500 CP ou menos podem participar. Na Grande
+                      Liga, os Pokémon que têm CP máximo relativamente baixo em
+                      comparação com outras espécies podem prosperar devido ao
+                      baixo limite de CP desta liga.
+                    </p>
+                    <b><p>Pokemons dominantes:</p></b>
+                    <p>
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/azumarill.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/nidoqueen.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/sableye.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/registeel.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/bastiodon.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/altaria.png"
+                        width="75"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <img
+                      src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"
+                    />
+                    <span class="copas">Ultra League</span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      A Ultra League limita o CP dos Pokémon participantes em
+                      2.500. Você começará a ver mais Pokémon lendários na Ultra
+                      League, especialmente Pokémon lendários mais defensivos,
+                      mas não deixe que a presença desses Pokémon Lendários o
+                      engane — muitos outros Pokémon também têm desempenho
+                      excelente na Ultra League. Muitos dos primeiros Pokémon
+                      parceiros com ataques exclusivos do Dia da Comunidade.
+                    </p>
+                    <b><p>Pokemons dominantes:</p></b>
+                    <p>
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/deoxys-defense.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/abomasnow-f.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/swampert.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/giratina-altered.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/cresselia.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/charizard.png"
+                        width="75"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <img
+                      src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"
+                    />
+                    <span class="copas">Master League</span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      A Master League permite que qualquer Pokémon participe,
+                      independentemente do seu CP. Como você pode esperar, os
+                      treinadores desta liga tendem a Pokémon com alto CP
+                      máximo. Os Pokémon que brilham nesta liga também costumam
+                      ser ótimas opções para Raid Battles, então você obterá
+                      muito valor se aumentar o poder do Pokémon ao maximo. No
+                      entanto, alguns Pokémon que não são escolhas tão populares
+                      para Raid Battles também são concorrentes poderosos na
+                      Master League
+                    </p>
+                    <b><p>Pokemons dominantes:</p></b>
+                    <p>
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/dialga.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/togekiss.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/giratina-origin.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/groudon.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/mewtwo.png"
+                        width="75"
+                      />
+                      <img
+                        src="https://img.pokemondb.net/sprites/black-white/normal/lugia.png"
+                        width="75"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ligas">
+              <p>
+                Além das três ligas principais - Great, Ultra e Master Leagues -
+                cada temporada apresenta copas temáticas. Por exemplo, um Master
+                League Classic geralmente apresentará Pokémon sem CP máximo, mas
+                excluirá certos Pokémon. Um exemplo de copo temático é o Element
+                Cup, que apresenta Pokémon do tipo Fogo, Água e Grama.
+              </p>
+            </div>
+          </div>
+          <div id="preparar">
+            <div>
+              <h2>
+                Como se preparar para a batalha: treinamento, segundo ataque
+                carregado e TMs
+              </h2>
+              <p>
+                Como todos os Treinadores estão competindo com as mesmas
+                restrições, é importante tirar o máximo possível de seus Pokémon
+                para evitar deixá-los em desvantagem. Além das espécies de
+                Pokémon que você seleciona, há dois outros fatores principais a
+                serem considerados: o CP do seu Pokémon e os Ataques Rápidos e
+                Carregados disponíveis para eles.
+              </p>
+              <p>
+                O CP é simples na superfície, mas surpreendentemente difícil de
+                otimizar. O CP é uma representação do poder de um Pokémon, então
+                você geralmente desejará o CP do seu Pokémon o mais próximo do
+                CP máximo permitido para qualquer liga em que você gostaria de
+                usá-lo.
+              </p>
+              <p>
+                A estatística de Ataque influencia o CP de um Pokémon mais do
+                que a Defesa e o HP. Alguns Treinadores são muito particulares
+                sobre seus Pokémon, optando por usar Pokémon com Ataque mais
+                baixo e Defesa e HP mais altos para obter um pouco mais de poder
+                geral com um CP mais baixo
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <p>
+            Version 1.28.5.12 © 2021 PokeBattle LLC, released under the MIT
+            license | Privacy Policy
+          </p>
+          <p>
+            Pokémon and Pokémon GO are copyright of The Pokémon Company,
+            Niantic, Inc., and Nintendo. All trademarked images and names are
+            property of their respective owners, and any such material is used
+            on this site for educational purposes only. PvPoke LLC has no
+            affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.
+          </p>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <p>@markes_guilherme</p>
+            <p>Guilherme Marques</p>
+            <p>+55(18)99663-0552</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,735 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.col-12 {
+    background-color: white;
+    display: grid;
+    grid-gap: 20px;
+
+}
+
+.col-6 {
+    grid-gap: 0px !important;
+}
+
+.col-12.cabeca {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#logo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#navegadores {
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 0px solid black;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+.principal {
+    background-image: url("https://i.pinimg.com/236x/c8/0d/c9/c80dc9b217f3e4d10cd3ff7abb04f94a.jpg");
+}
+
+main {
+    width: 100%;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5O8-4v4VrkX7lhAwxXQb2boZx-4EbnN-mAg0_m5oY-xTzgIT1JIKzfCWm0f3One57tATkjMoo-VfoUv88-qgEKotam319bXnGnDn1YhlSh7DD2qn84SO11pTv1mXkizQHCc-wnsDvhsybsnRL_R0XM5fr5-M5CT6FEIK25EY6-wH3PEFCMHTczJp2/s2880/pokemon-go-fest-2022.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.col-12 p {
+    color: black;
+}
+
+footer {
+    height: 125px;
+    width: 100%;
+    background-color: white;
+
+
+
+}
+
+.fab {
+    font-size: 20px;
+    margin: 10px;
+    display: block;
+
+}
+
+#creditos {
+    color: black;
+    text-decoration: none;
+}
+
+.fa-phone {
+    margin-left: 7px;
+}
+
+.col-8 p {
+    text-align: center;
+}
+
+.col-4.poke {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    border-top: 10px solid lightgreen;
+    border-bottom: 10px solid lightgreen;
+    border-radius: 10px;
+    height: 230px;
+}
+
+.col-4.poke p {
+    margin-bottom: 8px;
+}
+
+
+.vantagens {
+    background-color: white;
+    margin-top: 15px;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.resistencia {
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.tipo {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.danoMais {
+    color: red;
+    font-size: 20px;
+}
+
+.danoMenos {
+    color: green;
+    font-size: 20px;
+}
+
+.menosAinda {
+    color: #32CD32;
+    font-size: 23px;
+}
+
+
+.col-6.ataques {
+    background-color: white;
+    margin-top: 20px;
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Pformat {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PformatTitle {
+    font-size: 19px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.moves {
+    display: inline;
+    margin: 8px;
+}
+
+.shadow {
+    background-color: rgb(76, 0, 255);
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 12px;
+    color: white;
+    margin: 5px;
+    font-weight: 530;
+}
+
+.purified {
+    background-color: rgb(0, 81, 255);
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 12px;
+    color: white;
+    margin: 5px;
+    font-weight: 530;
+}
+
+.stab {
+    margin: 20px;
+    font-style: italic;
+}
+
+.col-6 {
+    display: grid;
+    grid-gap: 40px;
+}
+
+.col-5.ligas {
+    height: 320px;
+    background-color: white;
+    border-top: #4169E1 10px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border-bottom: #4169E1 10px solid;
+    display: grid;
+    grid-gap: 20px;
+
+
+}
+
+.copas {
+    margin-left: 200px;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+
+
+.accordion-button {
+    height: 70px;
+}
+
+.very-available {
+    text-align: center;
+    font-weight: 600;
+    color: #2aa32a !important;
+    font-size: 20px;
+}
+
+.available {
+    text-align: center;
+    font-weight: 600;
+    color: #c57d1f !important;
+    font-size: 20px;
+}
+
+.non-Available {
+    text-align: center;
+    font-weight: 600;
+    color: #da1b24 !important;
+    font-size: 20px;
+}
+
+.col-8.evolucao {
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+}
+
+.envolve {
+    margin: 0 38px;
+}
+
+.col-8.evolucao {
+    margin-top: 20px;
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.col-3.about {
+    border-top: 10px solid yellow;
+    border-bottom: 10px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.accordion-item {
+    border: 1px gray solid;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Querys*/
+
+@media (min-width: 320px) and (max-width: 800px) {
+    main {
+        width: 100%;
+        background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5O8-4v4VrkX7lhAwxXQb2boZx-4EbnN-mAg0_m5oY-xTzgIT1JIKzfCWm0f3One57tATkjMoo-VfoUv88-qgEKotam319bXnGnDn1YhlSh7DD2qn84SO11pTv1mXkizQHCc-wnsDvhsybsnRL_R0XM5fr5-M5CT6FEIK25EY6-wH3PEFCMHTczJp2/s2880/pokemon-go-fest-2022.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .col-6.poke {
+        min-width: 330px;
+        height: auto;
+        width: 600px;
+        border: black solid 0px;
+
+    }
+
+    .col-6.poke {
+        min-width: 150px;
+        height: auto;
+        width: 1000px;
+    }
+
+    .col-4.poke {
+        border-top: 10px solid lightgreen;
+        border-bottom: 10px solid lightgreen;
+        border-radius: 10px;
+        height: 300px;
+
+    }
+
+    .col-6 {
+        grid-gap: 0;
+    }
+
+    .col-6 h1 {
+        font-size: 20px;
+    }
+
+    .col-1 {
+        width: 0px;
+    }
+
+    .col-6.poke img {
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .col-6.ataques {
+        min-width: 300px;
+        margin: 15px auto;
+    }
+
+    .col-5.ligas {
+        min-width: 354px;
+        margin-top: 15px;
+        margin-left: 60px;
+    }
+
+    .copas {
+        margin-left: auto;
+    }
+
+    .col-8.evolucao {
+        min-width: 500px;
+        margin: 0 auto;
+        min-height: 320px;
+    }
+
+    .evoluir img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .col-3.about {
+        min-width: 277px;
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    #navegadores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 140px;
+        position: absolute;
+        top: 20px;
+        right: -80px;
+    }
+
+    .btn {
+        margin: 3px;
+    }
+
+    .col-6 {
+        grid-gap: 0;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1281px) {
+    main {
+        width: 100%;
+        background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5O8-4v4VrkX7lhAwxXQb2boZx-4EbnN-mAg0_m5oY-xTzgIT1JIKzfCWm0f3One57tATkjMoo-VfoUv88-qgEKotam319bXnGnDn1YhlSh7DD2qn84SO11pTv1mXkizQHCc-wnsDvhsybsnRL_R0XM5fr5-M5CT6FEIK25EY6-wH3PEFCMHTczJp2/s2880/pokemon-go-fest-2022.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .col-6.poke {
+        min-width: 150px;
+        height: auto;
+        width: 1000px;
+
+
+    }
+
+    .col-4.poke {
+        border-top: 10px solid lightgreen;
+        border-bottom: 10px solid lightgreen;
+        border-radius: 10px;
+        height: 270px;
+
+    }
+
+    .col-6 {
+        grid-gap: 0;
+    }
+
+    .col-6 h1 {
+        font-size: 20px;
+    }
+
+
+
+    .col-6.poke img {
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .col-6.ataques {
+        min-width: 350px;
+        margin: 15px auto;
+        max-width: 1000px;
+    }
+
+    .col-5.ligas {
+        min-width: 200px;
+        margin-top: 15px;
+        max-width: 300px;
+    }
+
+    .accordion-body p {
+        font-size: 15px;
+    }
+
+    .col-1 {
+        width: 0;
+    }
+
+    .copas {
+        margin-left: auto;
+    }
+
+    .col-8.evolucao {
+        min-width: 400px;
+        margin: 10px auto;
+        min-height: 320px;
+    }
+
+    .evoluir img {
+        max-width: 80px;
+        max-height: 80px;
+        margin: 0;
+    }
+
+    .col-3.about {
+        min-width: 200px;
+        margin: 10px auto;
+    }
+
+    footer {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    #navegadores {
+        position: absolute;
+        top: 25px;
+        right: 150px;
+        width: 400px;
+    }
+
+    .btn {
+        max-width: 120px;
+        font-size: 17px;
+    }
+
+    .resistencia p {
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tipagens*/
+
+.grass {
+    background-color: darkgreen;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    padding: 4px 8px;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.poison {
+    background-color: darkslateblue;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+
+
+.fire {
+    background-color: orangered;
+    font-weight: 500;
+    padding: 4px 8px;
+    ;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.flying {
+    background-color: #B0C4DE;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.water {
+    background-color: #4169E1;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.eletric {
+    background-color: #FFFF00;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.fighting {
+    background-color: #FF6347;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.psychic {
+    background-color: #FF1493;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.ice {
+    background-color: #B0E0E6;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.fairy {
+    background-color: #FFC0CB;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.rock {
+    background-color: #dabf75;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.steel {
+    background-color: #778899;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}

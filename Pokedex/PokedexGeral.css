@@ -1,0 +1,487 @@
+*, body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+
+}
+
+.cabeca {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+}
+
+.cabeca> :nth-child(1), .cabeca> :nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabeca> :nth-child(2) {
+  text-align: center;
+}
+
+header {
+  background-color: #E8E6E7;
+  align-items: center;
+  display: flex;
+
+}
+
+
+.btn {
+  background-color: #E8E6E7;
+  color: #915a3c;
+  border: 0;
+  font-size: 18px;
+
+}
+
+#home> :nth-child(1)::after {
+  content: none;
+}
+
+#usado {
+  border-bottom: #4c7992 solid 5px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+#selecionado {
+  background-color: #915a4c;
+  color: #E8E6E7;
+}
+
+.bonitinho {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bonitinho:hover {
+  border-bottom: #4c7992 solid 5px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.btn:hover {
+  background-color: #E8E6E7;
+  color: #915a3c;
+}
+
+.btn:focus {
+  background-color: #E8E6E7;
+  color: #915a3c;
+  box-shadow: 0 0 0 0 !important;
+}
+
+summary {
+  list-style: none;
+  text-align: center;
+  justify-content: right;
+}
+
+details a {
+  display: block;
+
+}
+
+details a:hover {
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #915a4c;
+  color: #E8E6E7;
+}
+
+.principal {
+  background-image: url("https://i.pinimg.com/236x/c8/0d/c9/c80dc9b217f3e4d10cd3ff7abb04f94a.jpg");
+}
+
+footer> :nth-child(1) {
+  padding: 20px;
+  background-color: #E8E6E7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+}
+
+footer {
+  background-color: #E8E6E7;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+
+}
+
+i {
+  font-size: 23px;
+}
+
+.icons i {
+  display: block;
+  margin-top: 10px;
+}
+
+.icons p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*Daqui pra cima é conteudo base*/
+
+.container {
+  background-color: #E8E6E7;
+  padding: 0;
+
+}
+
+article {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+
+.cardPokemon {
+  position: relative;
+  height: 288px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEVRd46gejhLAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC");
+  border-radius: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+
+}
+
+
+.cardPokemon p {
+  text-align: center;
+  font-size: 18px;
+  font-family: Gill Sans, sans-serif;
+  color: #915a4c;
+
+}
+
+.nomePoke {
+  font-size: 22px !important;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.numPokedex {
+  font-size: 16px !important;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.cardBlur {
+  position: absolute;
+  top: 150px;
+  width: 250px;
+  height: 140px;
+  opacity: 60%;
+  filter: blur(7px) brightness(1.2);
+  background-image: url("https://www.colorhexa.com/e8e6e7.png");
+  transform: translateY(150px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1;
+}
+
+.cardInfo {
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  top: 150px;
+  width: 250px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: translateY(150px);
+  z-index: 1;
+}
+
+
+.cardPokemon:hover .cardBlur, .cardPokemon:hover .cardInfo {
+  transform: translateY(0);
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+}
+
+.cardPokemon:hover .pokebolaLouca img {
+  animation-name: sumir;
+  animation-duration: 0.18s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+
+.pokebolaLouca {
+  position: absolute;
+  top: 247px;
+  left: 34%;
+  width: 40px;
+}
+
+.pokebolaLouca img {
+  width: 100px;
+}
+
+.linha1 {
+  width: 200%;
+  top: 50%;
+  background-image: url("https://www.colorhexa.com/915a4c.png");
+  height: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.linha2 {
+  width: 200%;
+  top: 35%;
+  background-image: url("https://www.colorhexa.com/915a4c.png");
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+
+
+.sobrepor {
+  position: relative;
+}
+
+
+
+@keyframes sumir {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grass {
+  background-color: darkgreen;
+  margin: 0 3px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 500;
+  padding: 4px 8px;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+}
+
+.poison {
+  background-color: darkslateblue;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+
+
+.fire {
+  background-color: orangered;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.flying {
+  background-color: #B0C4DE;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.water {
+  background-color: #4169E1;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.eletric {
+  background-color: #FFFF00;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.fighting {
+  background-color: #FF6347;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.psychic {
+  background-color: #FF1493;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.ice {
+  background-color: #B0E0E6;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.fairy {
+  background-color: #FFC0CB;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.rock {
+  background-color: #dabf75;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.steel {
+  background-color: #778899;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.ground {
+  background-color: #8B4513;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+.bug {
+  background-color: #94d121;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin: 0 3px;
+}

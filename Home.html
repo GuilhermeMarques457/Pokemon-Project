@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="cabeca">
+          <div>
+            <div class="bonitinho" id="usado">
+              <div class="dropdown home" id="home">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </button>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pokedex
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Kanto</a></li>
+                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                  <li><a class="dropdown-item" href="#">Unova</a></li>
+                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                  <li><a class="dropdown-item" href="#">NationalDex</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ajuda
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li>
+                    <a class="dropdown-item" href="EquipeGoRocket.html"
+                      >Equipe Go rocket</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Raids</a></li>
+                  <li><a class="dropdown-item" href="#">Ginasios</a></li>
+                  <li><a class="dropdown-item" href="#">Go battle</a></li>
+                  <li><a class="dropdown-item" href="#">Itens</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600"
+              height="100"
+            />
+          </div>
+          <div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GoBattle
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li>
+                    <a class="dropdown-item" id="selecionado" href="#"
+                      >Como jogar</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Times recomendados</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Classificações</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                  <details open>
+                    <summary>Ligas</summary>
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"
+                        width="45"
+                      />Great League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"
+                        width="45"
+                      />Ultra League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"
+                        width="45"
+                      />Master League</a
+                    >
+                  </details>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li><a class="dropdown-item" href="#">Dia comunitario</a></li>
+                  <li><a class="dropdown-item" href="#">Go Fest 2023</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Hora do holofone</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Noite de batalha GO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Saiba mais
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li>
+                    <a class="dropdown-item" href="#">Entre em contato</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Referencias</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container2">
+        <article id="ancora1">
+          <div class="introducao">
+            <div class="item">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png"
+                width="200"
+                height="200"
+              />
+            </div>
+            <div class="item">
+              <h2>Treinador iniciante?</h2>
+              <p>
+                Aprenda um pouco mais sobre como funciona o Pokemon Go e como
+                começar sua jornada como um treinador pokemon com estilo
+              </p>
+            </div>
+            <div class="item2">
+              <a href="#ancora2"
+                >Clique aqui para começar a desbravar o mundo de Pokemon GO</a
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/481px-Pokebola-pokeball-png-0.png"
+                width="50px"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="capture">
+            <div id="ancora">
+              <img
+                src="https://lh3.googleusercontent.com/RGShDyVofSODXIJ0eQ9umAID8tCw9KdqBFrtgCEdrxjJijG1qZBryfECP9IRV1MOJhCk4Za4VYB34DE-hnPesZNNVYMwgHKs9KrNue3LNJRJuw=e365-w1920"
+                id="captureReal"
+              />
+            </div>
+            <div class="explicacao">
+              <div>
+                <h1>Capture seus pokemons preferidos na sua cidade</h1>
+                <img
+                  src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_300/ncom/en_US/merchandising/curated%20list/Explore%20the%20world%20of%20Pok%C3%A9mon/PLP_Hero_Characters_Pokemon"
+                />
+              </div>
+              <div>
+                <p>Tenha diversos companheiros acompanhando-o em sua jornada</p>
+              </div>
+              <div>
+                <p>
+                  Ha diversas formas de adquirir pokemons, capturando é apenas
+                  uma delas
+                </p>
+              </div>
+              <div>
+                <p>Junte-se com seus amigos para trocar diversos pokemon</p>
+              </div>
+              <div>
+                <p>
+                  Junte-se para batalhar ferosmente contra os lendarios pokemons
+                  do universo Pokemon
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="ancora2">
+          <div class="equipeRocket">
+            <div class="enfrenteRocket">
+              <h1>Enfrente a equipe Go rocket</h1>
+              <p>
+                Acabe com eles junto a seus pokemons e receba diversas
+                recompensas alem da honra de acabar com mal.
+              </p>
+              <div id="lugiaSombra">
+                <img
+                  src="https://storage.googleapis.com/pgoblog/apex-reveal/LUGIA-2.gif"
+                  id="lugia"
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://s2.glbimg.com/5Ow3cXUKeKK0TFJ3UXHu2EL9RDk=/0x0:1600x900/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/O/F/E4Ted6SUOwtbvdK4qWXA/equipe-go-rocket-pokemon-go.jpg"
+                id="imgRocket"
+              />
+            </div>
+            <div>
+              <h1>Enfrente os lideres Go rocket</h1>
+              <p>
+                Uma batalha ardua, seus pokemons precisam estar bem treinados
+                para conseguir enfrenta-los.
+              </p>
+              <p>
+                Batalhas maiores, recompensas maiores, sera que voce sera capaz
+                de enfrentar o Giovvani?
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="ancora3">
+          <div class="raid">
+            <div>
+              <h1>Faça Raids</h1>
+              <p>
+                Derrote o pokemon superpoderoso com a ajuda da comunidade e seus
+                amigos.
+              </p>
+              <p>Tome cuidado com os ataques do pokemon.</p>
+              <p>Capture o pokemon após derrotalo e adicione a sua coleçao.</p>
+              <p>
+                Ha raids para todos os niveis de treinador, sera que tu es capaz
+                de derrotar uma raid 5 estrelas?
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://pokemongolive.com/img/posts/raids.jpg"
+                width="750px"
+                alt="Raid"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article id="ancora4">
+          <div class="pokestops">
+            <div>
+              <img
+                src="https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0"
+                alt="PokesTop"
+                width="750"
+              />
+            </div>
+            <div class="pokestopsArtigo">
+              <div>
+                <h1>Colete pokestops</h1>
+                <p>
+                  Aventure-se pela sua cidade e descubra lugares onde os
+                  proprios jogadores acharam que mereciam uma marca.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Pokestops dropam itens essenciais para todos os treinadores
+                  pokemon.
+                </p>
+                <p>
+                  Um treinador quando veterando pode indicar um lugar que deve
+                  ser um ponto de encontro.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://i.pinimg.com/originals/9f/85/fd/9f85fd7a30c523a2665b9eabdd8a3616.png"
+                  width="150"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="ancora5">
+          <div class="battle">
+            <div>
+              <h1>Use seus aliados na liga pokemon</h1>
+              <p>Só aqueles mais fortes tem chances na liga pokemon</p>
+              <p>Confie uma batalha ao seu companheiro mais leal</p>
+              <p>Qual liga voce e seus pokemons se acaixaram melhor?</p>
+            </div>
+            <div>
+              <img
+                src="https://conteudo.imguol.com.br/c/entretenimento/89/2020/04/01/pokemon-go-1585751730249_v2_4x3.jpg"
+                alt="Go Battle"
+                height="560"
+              />
+            </div>
+            <div class="ligas">
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"
+                  alt="Great League"
+                />
+                <p class="great">Great League:</p>
+                <p>
+                  Nessa liga apenas os pokemons mais fracos se enfrentam, mas
+                  nao se engane, pois a mesma é uma das mais dificeis de se
+                  vencer.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"
+                  alt="Ultra League"
+                />
+                <p class="ultra">Ultra League:</p>
+                <p>
+                  Nessa liga os pokemons de medio porte dominam, tanto lendarios
+                  quanto pokemons comuns
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"
+                  alt="Master League"
+                />
+                <p class="master">Master League:</p>
+                <p>
+                  Nessa liga onde os pokemons mais fortes se enfrentam, nessa
+                  liga onde os seus treinadores ponham seus maiores esforços em
+                  treinar seus pokemons
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <p>
+            Version 1.28.5.12 © 2021 PokeBattle LLC, released under the MIT
+            license | Privacy Policy
+          </p>
+          <p>
+            Pokémon and Pokémon GO are copyright of The Pokémon Company,
+            Niantic, Inc., and Nintendo. All trademarked images and names are
+            property of their respective owners, and any such material is used
+            on this site for educational purposes only. PvPoke LLC has no
+            affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.
+          </p>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <p>@markes_guilherme</p>
+            <p>Guilherme Marques</p>
+            <p>+55(18)99663-0552</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

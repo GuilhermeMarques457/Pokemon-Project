@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbassaur</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="Pokedex.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 cabeca">
+                    <div class="col-3">
+                        <div id="logo">
+                            <img src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600" width="180" height="120">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <nav id="navegadores">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Go Battle
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Eventos
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pokedex
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <div class="row">
+        <div class="col-12">
+
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 poke">
+                        <div class="row">
+                            <div class="col-6 poke">
+                                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width="200" height="200">
+                            </div>
+                            <div class="col-6 poke">
+                                <h1>Bulbassaur</h1>
+                                <p>Tipo: <span class="grass">Grass</span> <span class="poison">Poison</span></p>
+                                <p>#001 (Kanto)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+
+                    <div class="col-7 vantagens">
+                        <p  class="resistencia">Tipos do pokemon:</p>
+                        <p class="tipo"><span class="grass tipo">Grass</span><span class="poison tipo">Poison</span></p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="resistencia">Vulneravel à:</p>
+                                <p><span  class="flying">Flying</span> Leva <span class="danoMais">60%</span> a mais de dano</p>
+                                <p><span  class="psychic">Pyschic</span> Leva <span class="danoMais">60%</span> a mais de dano</p>
+                                <p><span  class="ice">Ice</span> Leva <span class="danoMais">60%</span> a mais de dano</p>
+                                <p><span  class="fire">Fire</span> Leva <span class="danoMais">60%</span> a mais de dano</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="resistencia">Resistente à:</p>
+                                <p><span class="fighting">Fighting</span> Leva <span class="danoMenos">63%</span> de dano</p>
+                                <p><span class="eletric">Eletric</span> Leva <span class="danoMenos">63%</span> de dano</p>
+                                <p><span class="fairy">Fairy</span> Leva <span class="danoMenos">63%</span> de dano</p>
+                                <p><span class="water">Water</span> Leva <span class="danoMenos">63%</span> de dano</p>
+                                <p><span class="grass">Grass</span> Leva <span class="danoMenos menosAinda">39%</span> de dano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6 ataques">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center PformatTitle">Ataques Ageis</p>
+                                        <div class="row">
+                                            <div class="col-4">
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">Dano</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">DPS</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">Energia</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">EPS</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/grass.jpg"><p class="Pformat moves">Chicote de vinha</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">10</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">20</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">16</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/normal.jpg"><p class="Pformat moves">Investida</p>
+                                                </div> 
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">6</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">24</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">2</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 ataques">
+                                        <p class="text-center PformatTitle">Ataques Carregados</p>
+                                        <div class="row">
+                                            <div class="col-5">
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">Dano</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">D/energia</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">Enegia</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/grass.jpg"><p class="Pformat moves">Bomba de sementes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">65</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">1.3</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div> 
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/poison.jpg"><p class="Pformat moves">Bomba de lodo</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">65</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">1.3</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/grass.jpg"><p class="Pformat moves">Chicote poderoso</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">65</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">1.3</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/normal.jpg"><p class="Pformat moves">Fustraçao<span class="shadow">Sombroso</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">65</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">1.3</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div>
+                                                    <img src="https://cdn.ligadosgames.com/imagens/normal.jpg"><p class="Pformat moves">Retorno<span class="purified">Purificado</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">65</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">1.3</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="text-center Pformat">8</p>
+                                            </div>
+                                        </div>    
+                                        <p class="stab">Os ataques do mesmo tipo do pokemon causam 20% a mais de dano, isso se da por conta do "STAB"</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                            <div class="col-5 ligas">
+                                <p class="text-center PformatTitle">Ligas usaveis</p>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                          <img src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"> <span class="copas">Great League</span> 
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <p class="available">Available</p>
+                                          <p>Ranque do pokemon: entre: #500 e #600.</p>
+                                          <p>Tipagens suplementares: <span class="rock">Rock</span> <span class="steel">Steel</span></p>
+                                          <p>Maiores couters: <img src="https://img.pokemondb.net/sprites/sword-shield/icon/registeel.png"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/altaria.png"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/golbat.png"></p>
+                                          <p>Pokemons complementares: <img src="https://img.pokemondb.net/sprites/sword-shield/icon/bastiodon.png"> <img src=""></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <img src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"> <span class="copas">Ultra League</span>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="non-Available">non-Available</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <img src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"> <span class="copas">Master League</span>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="non-Available">non-Available</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 evolucao">
+                        <p class="text-center PformatTitle">Evoluçoes</p>
+                        <p class="Pformat"> Ha um total de 3 pokemons na familia do Bulbassaur. Bulbassaur evolui para Ivysaur com um custo de 25 doces de Bulbassaur, apos evoluir pode ser evoluido para Venusaur por um custo de 100 doces de Bulbasaur.</p>
+                        <div class="evoluir">
+                            <p><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width="100" height="100" class="envolve"> <i class="fas fa-arrow-right"></i> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png" class="envolve" width="100" height="100"> <i class="fas fa-arrow-right"></i> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" class="envolve" width="100" height="100"> <i class="fas fa-arrow-right"></i> <img src="https://images.gameinfo.io/pokemon-trimmed/120/p3f436.webp" class="envolve" width="100" height="100"> </p>
+                            <p class="Pformat">Para evoluir para Mega Venusaur é necessario 200 Mega Energy na primeira vez, e 40 Mega Energy todas as outras vezes.</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-3 about">
+                        <p class="text-center PformatTitle">Sobre</p>
+                        <p class="stab">"Bulbasaur pode ser visto tirando uma soneca ao sol. A semente nas suas costas cresce cada vez mais à medida que absorve os raios solares."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p>Version 1.28.5.12 © 2021 PokeBattle LLC, released under the MIT license | Privacy Policy</p>
+                    <p>Pokémon and Pokémon GO are copyright of The Pokémon Company, Niantic, Inc., and Nintendo. All trademarked images and names are property of their respective owners, and any such material is used on this site for educational purposes only. PvPoke LLC has no affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.</p>
+                </div>
+                <div class="col-4 ">
+                    <i class="fab fa-instagram">                    @markes_guilherme</i>
+                    <i class="fab fa-facebook-f">     Guilherme Marques</i>
+                    <i class="fas fa-phone">    (18)99663-0552</i>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

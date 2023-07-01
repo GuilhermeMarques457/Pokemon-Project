@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Go Rocket</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="EquipeGoRocket.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="cabeca">
+                    <div>
+                        <div class="bonitinho">
+                            <div class="dropdown home" id="home">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pokedex
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item" href="#">Kanto</a></li>
+                                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                                  <li><a class="dropdown-item" href="#">Unova</a></li>
+                                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                                  <li><a class="dropdown-item" href="#">NationalDex</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho"  id="usado">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ajuda
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                  <li><a class="dropdown-item" href="#"  id="selecionado">Equipe Go rocket</a></li>
+                                  <li><a class="dropdown-item" href="#">Raids</a></li>
+                                  <li><a class="dropdown-item" href="#">Ginasios</a></li>
+                                  <li><a class="dropdown-item" href="#">Go battle</a></li>
+                                  <li><a class="dropdown-item" href="#">Itens</a></li>
+                                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600" height="100">
+                    </div>
+                    <div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                  GoBattle
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                  <li><a class="dropdown-item" id="selecionado" href="#">Como jogar</a></li>
+                                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                                  <li><a class="dropdown-item" href="#">Times recomendados</a></li>
+                                  <li><a class="dropdown-item" href="#">Classificações</a></li>
+                                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                                    <details open>
+                                        <summary>Ligas</summary>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0" width="45">Great League</a>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0" width="45">Ultra League</a>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0" width="45">Master League</a>
+                                    </details>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Eventos
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                  <li><a class="dropdown-item" href="#">Dia comunitario</a></li>
+                                  <li><a class="dropdown-item" href="#">Go Fest 2023</a></li>
+                                  <li><a class="dropdown-item" href="#">Hora do holofone</a></li>
+                                  <li><a class="dropdown-item" href="#">Noite de batalha GO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Saiba mais
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                  <li><a class="dropdown-item" href="#">Entre em contato</a></li>
+                                  <li><a class="dropdown-item" href="#">Referencias</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="equipeRocket">
+                <div>
+                    <h1>Equipe Go Rocket</h1>
+                </div>
+                <div>
+                    
+                    <h2>Como encontra-los?</h2>
+                    <div>
+                        <div class="barra1"></div>
+                        <p>Os recrutas e lideres rockets podem ser encontrados em pokestops e tambem em baloes rocket do qual aparece algumas vezes ao dia, olha só!!! Nem precisa sair de casa para enfrentar o mal.</p>
+                        <p>Os recrutas rockets dao diversas recompensas tais como:</p>
+                        <div class="sombroso">
+                            <p>Pokemon sombrosos</p>
+                            <img src="sombroso2.png" width="150" alt="PokemonSombroso">
+                            <p>Radares rocket</p>
+                            <img src="radar2.png" alt="Radar Rocket" width="150"> 
+                        </div>
+                    </div>
+                    <div id="encontrarRocket">
+                        <img src="https://gamepress.gg/pokemongo/sites/pokemongo/files/2019-07/greyedOutR.jpg" alt="Encontrar equipe rocket" width="300">
+                    </div>
+                </div>
+                <div class="liderRocket">
+                    <h2>Lideres Rocket</h2>
+                    <div>
+                        <p>Os lideres rockets só podem ser encontrados quando voce obtiver 6 fragmentos de radar rocket.</p>
+                        <p>Os chefoes podem ser bem difíceis se sua experiencia com o Pokemon Go for baixa. Porem com o tempo voce pega o jeito.</p>
+                        <div id="sierra">
+                            <p class="liderFonte">Sierra</p>
+                            <img src="https://static.wixstatic.com/media/85095f_aacbea8bc6bd406a8a8a684010cc1c48~mv2.png/v1/fit/w_300,h_300,al_c,q_5,enc_auto/file.png" width="130" alt="lider" class="liderEstilo">
+                        </div>
+                        <div id="cliff">
+                            <p class="liderFonte">Cliff</p>
+                            <img src="cliff2.png" width="100" class="liderEstilo">
+                        </div>
+                        <div id="arlo">
+                            <p class="liderFonte">Arlo</p>
+                            <img src="https://i0.wp.com/www.pokemythology.net/conteudo/imgs/personagens/rockets/p_arlo.png?w=640&ssl=1" width="90" alt="lider" class="liderEstilo">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Batalhas Rocket</h2>
+                <div class="box-escolha">
+                    <div class="escolha">
+                        <div>
+                            <label for="trigger-recruta" id="trigger-escolha-recruta">Recruta</label>
+                        </div>
+                        <div>
+                            <label for="trigger-lider" id="trigger-escolha-lider">Lider</label>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <input type="radio" id="trigger-recruta" name="trigger" checked>
+                <input type="radio" id="trigger-lider" name="trigger">
+                <div class="pokemonsDisponiveis">
+                    <div class="cardRocket recruta">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/grunt-f.png.webp" width="150">
+                            <p><span class="dragon">Dragão</span></p>
+                            <p>"GRRRR! ...Se ligou no rugido?"</p>
+                            <p class="counters">Counters:</p>
+                            <div class="ladoLado">
+                                <p><span class="ice">Gelo</span></p>
+                                <p><span class="fairy">Fada</span></p>
+                                <p><span class="dragon">Dragão</span></p>
+                            </div>                
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/147.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/333.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/333.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/444.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/334.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/230.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket recruta">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/grunt-m.png.webp" width="150">
+                            <p><span class="water">Água</span></p>
+                            <p>"Estas águas são traiçoeiras"</p>
+                            <p class="counters">Counters:</p>
+                            <div class="ladoLado">
+                                <p><span class="eletric">Elétrico</span></p>
+                                <p><span class="grass">Planta</span></p>
+                            </div>                
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/72.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/7.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel3" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/8.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/61.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/138.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/62.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/55.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket recruta">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/grunt-f.png.webp" width="150">
+                            <p><span class="eletric">Eletrico</span></p>
+                            <p>"Prepare-se para um choque e tanto!"</p>
+                            <p class="counters">Counters:</p>
+                            <div class="ladoLado">
+                                <p><span class="ground">Terrestre</span></p>
+                            </div>                
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/239.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/81.png" alt="recompensa">
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/180.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/82.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/181.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/135.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket recruta">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/grunt-m.png.webp" width="150">
+                            <p><span class="fairy">Fada</span></p>
+                            <p>"Se liga no meu Pokémon fofinho!"</p>
+                            <p class="counters">Counters:</p>
+                            <div class="ladoLado">
+                                <p><span class="steel">Metal</span></p>
+                                <p><span class="poison">Veneno</span></p>
+                            </div>                
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/39.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/209.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/176.png" alt="recompensa">
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel2" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/281.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/282.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/40.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/210.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket lider-card">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/leader-sierra.png.webp" alt="lider" width="150">
+                            <p class="lideres">Lider Sierra</p>    
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/7.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/9.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/62.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/143.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/131.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/59.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket lider-card">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/leader-arlo.png.webp" alt="lider" width="150">
+                            <p class="lideres">Lider Arlo</p>            
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/4.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/6.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/230.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/303.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/464.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/475.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket lider-card">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/leader-cliff.png.webp" alt="lider" width="150">
+                            <p class="lideres">Lider Cliff</p>                    
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/1.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/31.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/73.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/142.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/208.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/229.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardRocket lider-card">
+                        <div>
+                            <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/boss-giovanni.png.webp" alt="lider" width="150">
+                            <p class="lideres">Chefe Giovanni</p>               
+                        </div>
+                        <div>
+                            <div>
+                                <p class="asRecompensas">Primeiro Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/53.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Segundo Pokemon</p>
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/115.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/181.png" alt="recompensa">
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/275.png" alt="recompensa">
+                            </div>
+                            <div>
+                                <p class="asRecompensas">Terceiro Pokemon</p>
+                                <img src="https://jogadaexcelente.com.br/wp-content/themes/jogadaexcelente/assets/images/encounter_icon.png.webp" alt="capturavel" class= "capturavel1" width="18"> 
+                                <img src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/381.png" alt="recompensa">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>           
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <p>Version 1.28.5.12 © 2021 PokeBattle LLC, released under the MIT license | Privacy Policy</p>
+                <p>Pokémon and Pokémon GO are copyright of The Pokémon Company, Niantic, Inc., and Nintendo. All trademarked images and names are property of their respective owners, and any such material is used on this site for educational purposes only. PvPoke LLC has no affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.</p>
+            </div>
+            <div class="icons">
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <p>@markes_guilherme</p>
+                    <p>Guilherme Marques</p>
+                    <p>+55(18)99663-0552</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

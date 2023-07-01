@@ -1,0 +1,619 @@
+ /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+
+ /*
+        colors:
+            #4c7992
+            #915a3c
+            #cfb797
+            #e8e6e7
+    */
+
+ *, body {
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+
+ }
+
+ .cabeca {
+   display: grid;
+   grid-template-columns: 3fr 1fr 3fr;
+ }
+
+ .cabeca> :nth-child(1), .cabeca> :nth-child(3) {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .cabeca> :nth-child(2) {
+   text-align: center;
+ }
+
+ header {
+   background-color: #E8E6E7;
+   align-items: center;
+   display: flex;
+
+ }
+
+
+ .btn {
+   background-color: #E8E6E7;
+   color: #915a3c;
+   border: 0;
+   font-size: 18px;
+
+ }
+
+ #home> :nth-child(1)::after {
+   content: none;
+ }
+
+ #usado {
+   border-bottom: #4c7992 solid 5px;
+   border-radius: 5px;
+   font-size: 22px;
+ }
+
+ #selecionado {
+   background-color: #915a4c;
+   color: #E8E6E7;
+ }
+
+ .bonitinho {
+   height: 100px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ }
+
+ .bonitinho:hover {
+   border-bottom: #4c7992 solid 5px;
+   border-radius: 5px;
+   font-size: 19px;
+ }
+
+ .btn:hover {
+   background-color: #E8E6E7;
+   color: #915a3c;
+ }
+
+ .btn:focus {
+   background-color: #E8E6E7;
+   color: #915a3c;
+   box-shadow: 0 0 0 0 !important;
+ }
+
+ summary {
+   list-style: none;
+   text-align: center;
+   justify-content: right;
+ }
+
+ details a {
+   display: block;
+
+ }
+
+ details a:hover {
+   cursor: pointer;
+ }
+
+ .dropdown-item:hover {
+   background-color: #915a4c;
+   color: #E8E6E7;
+ }
+
+ .principal {
+   background-image: url("https://i.pinimg.com/236x/c8/0d/c9/c80dc9b217f3e4d10cd3ff7abb04f94a.jpg");
+ }
+
+ footer> :nth-child(1) {
+   padding: 20px;
+   background-color: #E8E6E7;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-gap: 30px;
+ }
+
+ footer {
+   background-color: #E8E6E7;
+ }
+
+ .icons {
+   display: grid;
+   grid-template-columns: 1fr 10fr;
+
+ }
+
+ i {
+   font-size: 23px;
+ }
+
+ .icons i {
+   display: block;
+   margin-top: 10px;
+ }
+
+ .icons p {
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ h1 {
+   text-align: center;
+   font-weight: 800;
+   color: #915a4c;
+   padding-top: 20px;
+   margin-bottom: 20px;
+   font-size: 52px;
+ }
+
+ h2 {
+   font-size: 36px;
+   text-align: center;
+   font-weight: 500;
+   color: #915a4c;
+   margin-top: 15px;
+   margin-bottom: 15px;
+
+ }
+
+ h3 {
+   text-align: center;
+   font-weight: 600;
+   color: #E8E6E7;
+   margin-top: 5px;
+ }
+
+ main {
+   width: 100%;
+   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5O8-4v4VrkX7lhAwxXQb2boZx-4EbnN-mAg0_m5oY-xTzgIT1JIKzfCWm0f3One57tATkjMoo-VfoUv88-qgEKotam319bXnGnDn1YhlSh7DD2qn84SO11pTv1mXkizQHCc-wnsDvhsybsnRL_R0XM5fr5-M5CT6FEIK25EY6-wH3PEFCMHTczJp2/s2880/pokemon-go-fest-2022.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+ }
+
+ p {
+   font-size: 19px;
+ }
+
+ .container {
+   background-color: #E8E6E7;
+   padding: 20px 0;
+ }
+
+ .tipo {
+   display: grid;
+   grid-template-columns: 7fr 20fr 20fr 7fr;
+   height: 70px;
+   margin: 20px 0;
+   align-items: center;
+   padding: 0 15px;
+ }
+
+ .explicacao {
+   padding: 10px 100px;
+ }
+
+ .tipo div {
+   font-size: 23px;
+   color: #E8E6E7;
+ }
+
+ .agua {
+   background-color: #00238d;
+ }
+
+ .fogo {
+   background-color: rgb(53, 3, 13);
+ }
+
+ .planta {
+   background-color: rgb(1, 36, 1);
+ }
+
+ .eletrico {
+   background-color: #666608;
+ }
+
+ .lutador {
+   background-color: rgb(49, 3, 3);
+ }
+
+ .voador {
+   background-color: #55606e;
+ }
+
+ .metal {
+   background-color: #323941;
+ }
+
+ .fantasma {
+   background-color: rgb(27, 5, 48);
+ }
+
+ .noturno {
+   background-color: rgb(88, 86, 86);
+ }
+
+ .inseto {
+   background-color: rgb(64, 85, 21);
+ }
+
+ .dragao {
+   background-color: rgb(8, 8, 94);
+ }
+
+ .normalzao {
+   background-color: rgb(75, 75, 75);
+ }
+
+ .gelo {
+   background-color: #365457;
+ }
+
+ .veneno {
+   background-color: rgb(58, 1, 80);
+ }
+
+ .rocha {
+   background-color: #494026;
+ }
+
+ .fada {
+   background-color: rgb(128, 68, 88);
+ }
+
+ .terra {
+   background-color: rgb(44, 13, 13);
+ }
+
+ .psiquico {
+   background-color: rgb(71, 32, 38);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .grass {
+   background-color: darkgreen;
+   border-radius: 3px;
+   color: white;
+   font-weight: 500;
+   padding: 4px 8px;
+   margin-left: 10px;
+   text-align: center;
+   display: inline-block;
+   width: 70px;
+   height: 30px;
+   font-size: 16px;
+ }
+
+ .poison {
+   background-color: rgb(115, 58, 190);
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   width: 70px;
+   height: 30px;
+   margin-left: 10px;
+   font-size: 16px;
+ }
+
+ .ghost {
+   background-color: darkslateblue;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   width: 70px;
+   height: 30px;
+   margin-left: 10px;
+   font-size: 16px;
+ }
+
+
+
+ .fire {
+   background-color: orangered;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   margin-left: 10px;
+   width: 70px;
+   height: 30px;
+   font-size: 16px;
+ }
+
+ .flying {
+   background-color: #B0C4DE;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   width: 70px;
+   font-size: 16px;
+   margin-left: 10px;
+   height: 30px;
+ }
+
+ .water {
+   background-color: #4169E1;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   width: 70px;
+   font-size: 16px;
+   height: 30px;
+   margin-left: 10px;
+ }
+
+ .eletric {
+   background-color: #cece18;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   height: 30px;
+   margin-left: 10px;
+ }
+
+ .fighting {
+   background-color: #b13923;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   margin-left: 10px;
+   height: 30px;
+
+ }
+
+ .psychic {
+   background-color: #FF1493;
+   font-weight: 500;
+   padding: 4px 3px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   margin-left: 10px;
+   height: 30px;
+ }
+
+ .normal {
+   background-color: #a3abac8f;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   font-size: 16px;
+   text-align: center;
+   display: inline-block;
+   margin-left: 10px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .ice {
+   background-color: #B0E0E6;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   font-size: 16px;
+   text-align: center;
+   display: inline-block;
+   margin-left: 10px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .fairy {
+   background-color: #FFC0CB;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   font-size: 16px;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   width: 70px;
+   height: 30px;
+ }
+
+ .rock {
+   background-color: #dabf75;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   width: 70px;
+   font-size: 16px;
+   height: 30px;
+ }
+
+ .steel {
+   background-color: #778899;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .ground {
+   background-color: #8B4513;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .dark {
+   background-color: #181717;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   font-size: 15px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .dragon {
+   background-color: rgb(9, 9, 202);
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   font-size: 15px;
+   width: 70px;
+   height: 30px;
+ }
+
+ .bug {
+   background-color: #98d144;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   text-align: center;
+   margin-left: 10px;
+   display: inline-block;
+   width: 70px;
+   font-size: 16px;
+   height: 30px;
+ }
+
+
+
+ .null {
+   background-color: #31332f;
+   font-weight: 500;
+   padding: 4px 8px;
+   border-radius: 3px;
+   color: white;
+   margin-left: 10px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   width: 70px;
+   height: 30px;
+ }

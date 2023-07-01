@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="PokedexGeral.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="container">
+                <div class="cabeca">
+                    <div>
+                        <div class="bonitinho">
+                            <div class="dropdown home" id="home">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bonitinho" id="usado">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pokedex
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item" id="selecionado" href="#">Kanto</a></li>
+                                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                                  <li><a class="dropdown-item" href="#">Unova</a></li>
+                                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                                  <li><a class="dropdown-item" href="#">NationalDex</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ajuda
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                  <li><a class="dropdown-item" href="EquipeGoRocket.html">Equipe Go rocket</a></li>
+                                  <li><a class="dropdown-item" href="#">Raids</a></li>
+                                  <li><a class="dropdown-item" href="#">Ginasios</a></li>
+                                  <li><a class="dropdown-item" href="#">Go battle</a></li>
+                                  <li><a class="dropdown-item" href="#">Itens</a></li>
+                                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600" height="100">
+                    </div>
+                    <div>
+                        <div class="bonitinho" >
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                  GoBattle
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                  <li><a class="dropdown-item" href="#">Como jogar</a></li>
+                                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                                  <li><a class="dropdown-item" href="#">Times recomendados</a></li>
+                                  <li><a class="dropdown-item" href="#">Classificações</a></li>
+                                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                                    <details open>
+                                        <summary>Ligas</summary>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0" width="45">Great League</a>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0" width="45">Ultra League</a>
+                                        <a class="dropdown-item"><img src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0" width="45">Master League</a>
+                                    </details>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Eventos
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                  <li><a class="dropdown-item" href="#">Dia comunitario</a></li>
+                                  <li><a class="dropdown-item" href="#">Go Fest 2023</a></li>
+                                  <li><a class="dropdown-item" href="#">Hora do holofone</a></li>
+                                  <li><a class="dropdown-item" href="#">Noite de batalha GO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonitinho">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Saiba mais
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                  <li><a class="dropdown-item" href="#">Entre em contato</a></li>
+                                  <li><a class="dropdown-item" href="#">Referencias</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main class="principal">
+        <section>
+            <div class="container">
+                <article>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                        <p class="nomePoke">Bulbassaur</p>
+                        <p class="numPokedex">N&ordm; Pokedex: #001</p>
+                            <p>Tipo: <span class="grass">Grass</span><span class="poison">Poison</span></p>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width="250">   
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Ivysaur</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #002</p>
+                            <p>Tipo: <span class="grass">Grass</span><span class="poison">Poison</span></p>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png" width="250">   
+                        </div>
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Venusssaur</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #003</p>
+                            <p>Tipo: <span class="grass">Grass</span><span class="poison">Poison</span></p>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" width="250">   
+                        </div> 
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Charmander</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #004</p>
+                            <p>Tipo: <span class="fire">Fire</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" width="250">   
+                        </div>
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Charmeleon</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #005</p>
+                            <p>Tipo: <span class="fire">Fire</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png" width="250">   
+                        </div>  
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        
+                        <div class="cardInfo">
+                            <p class="nomePoke">Charizard</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #006</p>
+                            <p>Tipo: <span class="fire">Fire</span><span class="flying">Flying</span></p>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" width="250">   
+                        </div>
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Squirtle</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #007</p>
+                            <p>Tipo: <span class="water">Water</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" width="250">   
+                        </div>
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Wartoartle</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #008</p>
+                            <p>Tipo: <span class="water">Water</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png" width="250">   
+                        </div>
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Blastoise</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #009</p>
+                            <p>Tipo: <span class="water">Water</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" width="250">   
+                        </div> 
+                    </div>
+                    <div class="cardPokemon">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="pokebolaLouca">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/188/188918.png"
+                            />
+                        </div>
+                        <div class="cardBlur">
+                            
+                        </div>
+                        <div class="cardInfo">
+                            <p class="nomePoke">Caterpie</p>
+                            <p class="numPokedex">N&ordm; Pokedex: #010</p>
+                            <p>Tipo: <span class="bug">Bug</span>
+                        </div>
+                        <div class="sobrepor">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" width="250">   
+                        </div>
+                    </div>
+                    
+                   
+
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <p>Version 1.28.5.12 © 2021 PokeBattle LLC, released under the MIT license | Privacy Policy</p>
+                <p>Pokémon and Pokémon GO are copyright of The Pokémon Company, Niantic, Inc., and Nintendo. All trademarked images and names are property of their respective owners, and any such material is used on this site for educational purposes only. PvPoke LLC has no affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.</p>
+            </div>
+            <div class="icons">
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <p>@markes_guilherme</p>
+                    <p>Guilherme Marques</p>
+                    <p>+55(18)99663-0552</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+    
+</body>
+</html>

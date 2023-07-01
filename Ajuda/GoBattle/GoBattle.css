@@ -1,0 +1,674 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.cabeca {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+.cabeca> :nth-child(1), .cabeca> :nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabeca> :nth-child(2) {
+    text-align: center;
+}
+
+header {
+    background-color: #E8E6E7;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.btn {
+    background-color: #E8E6E7;
+    color: #915a3c;
+    border: 0;
+    font-size: 18px;
+
+}
+
+#home> :nth-child(1)::after {
+    content: none;
+}
+
+#usado {
+    border-bottom: #4c7992 solid 5px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+#selecionado {
+    background-color: #915a4c;
+    color: #E8E6E7;
+}
+
+.bonitinho {
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bonitinho:hover {
+    border-bottom: #4c7992 solid 5px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.btn:hover {
+    background-color: #E8E6E7;
+    color: #915a3c;
+}
+
+.btn:focus {
+    background-color: #E8E6E7;
+    color: #915a3c;
+    box-shadow: 0 0 0 0 !important;
+}
+
+summary {
+    list-style: none;
+    text-align: center;
+    justify-content: right;
+}
+
+details a {
+    display: block;
+
+}
+
+details a:hover {
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #915a4c;
+    color: #E8E6E7;
+}
+
+.principal {
+    background-image: url("https://i.pinimg.com/236x/c8/0d/c9/c80dc9b217f3e4d10cd3ff7abb04f94a.jpg");
+}
+
+footer> :nth-child(1) {
+    padding: 20px;
+    background-color: #E8E6E7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 30px;
+}
+
+footer {
+    background-color: #E8E6E7;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+
+}
+
+i {
+    font-size: 23px;
+}
+
+.icons i {
+    display: block;
+    margin-top: 10px;
+}
+
+.icons p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*Daqui pra cima é o documento base*/
+
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    color: #915a4c;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #915a4c;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+
+main {
+    background-color: #E8E6E7;
+    width: 2900px;
+}
+
+
+article {
+    background-color: #E8E6E7;
+    padding: 30px;
+}
+
+
+.introducao> :nth-child(2) img {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.introducao> :nth-child(4) p {
+    display: inline-block;
+}
+
+.introducao> :nth-child(4) a {
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+.rotacaoPoke {
+    margin-left: 25px;
+    width: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    ;
+}
+
+.ajudas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+/*nth-child(1)*/
+.ajudas> :nth-child(1) {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 150px 350px;
+}
+
+.ajudas> :nth-child(1) h2 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.ajudas> :nth-child(1) img {
+    grid-column: 1/2;
+    width: 250px;
+
+}
+
+.ajudas> :nth-child(1)> :nth-child(3) {
+    grid-column: 2/3;
+}
+
+.ajudas> :nth-child(1)> :nth-child(4) {
+    grid-column: 2/3;
+}
+
+.ajudas> :nth-child(1)> :nth-child(4) {
+    grid-column: 2/3;
+}
+
+
+/*nth-child(2)*/
+.ajudas> :nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.ajudas> :nth-child(2)> :nth-child(4) {
+    grid-column: 2/3;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ajudas> :nth-child(2)> :nth-child(1) {
+    grid-column: 1/3;
+}
+
+.ajudas> :nth-child(2)> :nth-child(2) {
+    grid-column: 1/3;
+}
+
+.ajudas> :nth-child(2)> :nth-child(6) {
+    grid-column: 2/3;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ajudas> :nth-child(2)> :nth-child(7) {
+    grid-column: 1/3;
+}
+
+details {
+    display: inline-block;
+}
+
+.ajuda2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.ajuda2> :nth-child(2)> :nth-child(4) img {
+    width: 100px;
+
+}
+
+.ajuda2> :nth-child(2)> :nth-child(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.ajuda2> :nth-child(2)> :nth-child(4) div {
+    text-align: center;
+}
+
+#ace, #veteran, #expert, #legend {
+    font-size: 22px;
+}
+
+#ace {
+    background-image: linear-gradient(to bottom, #866454, #b89434, #e5caaf, #f5ebe0);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+#veteran {
+    background-image: linear-gradient(to bottom, #61718f, #5c8ac5, #e2ebee);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+#expert {
+    background-image: linear-gradient(to bottom, #d09a33, #edb148, #feeca3);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+#legend {
+    background-image: linear-gradient(to bottom, #5d93a8, #62abc2, #cdfdfe);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.ajuda3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.ajuda3> :nth-child(1) {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ajuda3> :nth-child(1)> :nth-child(2), .ajuda3> :nth-child(1)> :nth-child(6) {
+    grid-column: 1/4;
+
+}
+
+.ajuda3> :nth-child(1)> :nth-child(1) {
+    grid-column: 1/4;
+    margin-bottom: 15px;
+}
+
+.ajuda3> :nth-child(1)> :nth-child(3), .ajuda3> :nth-child(1)> :nth-child(4), .ajuda3> :nth-child(1)> :nth-child(5) {
+    margin: 20px auto;
+}
+
+.copas {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.accordion-item button {
+    display: block;
+    color: #915a4c;
+}
+
+
+.accordion-item {
+    background-color: #915a4c;
+    color: #E8E6E7;
+}
+
+.accordion-body {
+    font-size: 18px;
+}
+
+.accordion-body>:nth-child(3) {
+    text-align: center;
+}
+
+.ligas {
+    display: grid;
+}
+
+
+
+.ajuda3> :nth-child(2) {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ajuda3> :nth-child(2)> :nth-child(2) {
+    grid-row: 1/2;
+}
+
+
+main {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5O8-4v4VrkX7lhAwxXQb2boZx-4EbnN-mAg0_m5oY-xTzgIT1JIKzfCWm0f3One57tATkjMoo-VfoUv88-qgEKotam319bXnGnDn1YhlSh7DD2qn84SO11pTv1mXkizQHCc-wnsDvhsybsnRL_R0XM5fr5-M5CT6FEIK25EY6-wH3PEFCMHTczJp2/s2880/pokemon-go-fest-2022.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2150px;
+    background-attachment: fixed;
+}
+
+.rotacaoPoke:hover {
+    width: 35px;
+    animation-name: rotacionar;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.4, 0.6, 0.4, 0.8);
+
+}
+
+
+
+.rotacaoPoke {
+    margin-left: 25px;
+    width: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+
+
+
+
+
+
+
+
+@keyframes rotacionar {
+    0% {
+        transform: rotate(0px);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grass {
+    background-color: darkgreen;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    padding: 4px 8px;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.poison {
+    background-color: darkslateblue;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+
+
+.fire {
+    background-color: orangered;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.flying {
+    background-color: #B0C4DE;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.water {
+    background-color: #4169E1;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.eletric {
+    background-color: #FFFF00;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.fighting {
+    background-color: #FF6347;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.psychic {
+    background-color: #FF1493;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.ice {
+    background-color: #B0E0E6;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.fairy {
+    background-color: #FFC0CB;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.rock {
+    background-color: #dabf75;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.steel {
+    background-color: #778899;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.ground {
+    background-color: #8B4513;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+.bug {
+    background-color: #a6fc26;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}

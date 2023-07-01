@@ -1,0 +1,270 @@
+*, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+
+.cabeca {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+}
+
+.cabeca> :nth-child(1), .cabeca> :nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabeca> :nth-child(2) {
+  text-align: center;
+}
+
+header {
+  background-color: #E8E6E7;
+  align-items: center;
+  display: flex;
+
+}
+
+
+.btn {
+  background-color: #E8E6E7;
+  color: #915a3c;
+  border: 0;
+  font-size: 18px;
+
+}
+
+#home> :nth-child(1)::after {
+  content: none;
+}
+
+#usado {
+  border-bottom: #4c7992 solid 5px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+#selecionado {
+  background-color: #915a4c;
+  color: #E8E6E7;
+}
+
+.bonitinho {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bonitinho:hover {
+  border-bottom: #4c7992 solid 5px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.btn:hover {
+  background-color: #E8E6E7;
+  color: #915a3c;
+}
+
+.btn:focus {
+  background-color: #E8E6E7;
+  color: #915a3c;
+  box-shadow: 0 0 0 0 !important;
+}
+
+summary {
+  list-style: none;
+  text-align: center;
+  justify-content: right;
+}
+
+details a {
+  display: block;
+
+}
+
+details a:hover {
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #915a4c;
+  color: #E8E6E7;
+}
+
+.principal {
+  background-image: url("https://i.pinimg.com/236x/c8/0d/c9/c80dc9b217f3e4d10cd3ff7abb04f94a.jpg");
+}
+
+footer> :nth-child(1) {
+  padding: 20px;
+  background-color: #E8E6E7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+}
+
+footer {
+  background-color: #E8E6E7;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+
+}
+
+i {
+  font-size: 23px;
+}
+
+.icons i {
+  display: block;
+  margin-top: 10px;
+}
+
+.icons p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: #E8E6E7;
+  padding: 0px 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #915a4c;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 500;
+  color: #915a4c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.explicacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.atencao {
+  background-color: #cfb797;
+  padding: 10px;
+  color: rgb(46, 46, 46);
+  display: flex;
+  align-items: center;
+  border-left: 7px solid #4c7992;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+.ginasio {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.atencao p {
+  margin: 0;
+}
+
+
+.informaçoes-ginasio {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informaçoes-ginasio>:nth-child(1) {
+  width: 600px;
+}
+
+
+.informaçoes-ginasio>:nth-child(2) {
+  width: 1000px;
+  text-align: center;
+  position: relative;
+}
+
+.pokemaozinhos img {
+  position: absolute;
+  filter: drop-shadow(1px 1px 2px #6B6969);
+}
+
+.pokemaozinhos>:nth-child(1) {
+  top: 50px;
+  left: 0px;
+}
+
+.pokemaozinhos>:nth-child(2) {
+  top: 200px;
+  left: 100px;
+}
+
+.pokemaozinhos>:nth-child(3) {
+  top: 350px;
+  left: 25px;
+}
+
+.pokemaozinhos>:nth-child(4) {
+  top: 500px;
+  left: 75px;
+}
+
+.pokemaozinhos>:nth-child(5) {
+  top: 50px;
+  right: 0px;
+}
+
+.pokemaozinhos>:nth-child(6) {
+  top: 200px;
+  right: 100px;
+}
+
+.pokemaozinhos>:nth-child(7) {
+  top: 350px;
+  right: 25px;
+}
+
+.pokemaozinhos>:nth-child(8) {
+  top: 500px;
+  right: 75px;
+}
+
+.ganhando-recompensa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.ganhando-recompensa>:nth-child(1) {
+  width: 1000px;
+  text-align: center;
+  position: relative;
+}
+
+.ganhando-recompensa>:nth-child(2) {
+  width: 600px;
+}

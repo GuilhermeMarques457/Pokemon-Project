@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raids Pokemon Go</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="Raids.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="cabeca">
+          <div>
+            <div class="bonitinho">
+              <div class="dropdown home" id="home">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </button>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pokedex
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Kanto</a></li>
+                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                  <li><a class="dropdown-item" href="#">Unova</a></li>
+                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                  <li><a class="dropdown-item" href="#">NationalDex</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho" id="usado">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ajuda
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li>
+                    <a class="dropdown-item" href="#">Equipe Go rocket</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="selecionado">Raids</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Ginasios</a></li>
+                  <li><a class="dropdown-item" href="#">Go battle</a></li>
+                  <li><a class="dropdown-item" href="#">Itens</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600"
+              height="100"
+            />
+          </div>
+          <div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GoBattle
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li>
+                    <a class="dropdown-item" href="#">Como jogar</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Times recomendados</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Classificações</a></li>
+                  <li><a class="dropdown-item" href="#">Tipagens</a></li>
+                  <details open>
+                    <summary>Ligas</summary>
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/AsKJk8qO-DG7h5lbuiz_w9MGECY4e_EOZ411slb-mkbpMdGCqPSfD3Qko5RGgms7J9s9uOOb_eCs9t6uLTxJfzEqZK0GXJeiWJPOwr-j2zfoxw=s0"
+                        width="45"
+                      />Great League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/jIFAOZZ-kOHsx4eXSaLCo2wgQsuERKz6BGvLCQK6DuQITlmXWuWdk_dL-rms5Uabddtc52VX27jym6UmdkUyBAGPNa-deMfMFxsQ5ztA33DtZQ=s0"
+                        width="45"
+                      />Ultra League</a
+                    >
+                    <a class="dropdown-item"
+                      ><img
+                        src="https://lh3.googleusercontent.com/aHZYuOHr14bSZIVWb2m1srV6QpblKLKfKJ762MuNVGau61PWv4d-YRnUn-cxbtcV4ceJwpzfgbKrZWxr2teE6kgn1n9IbnuR3wnm-SgKv7zf-A=s0"
+                        width="45"
+                      />Master League</a
+                    >
+                  </details>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li><a class="dropdown-item" href="#">Dia comunitario</a></li>
+                  <li><a class="dropdown-item" href="#">Go Fest 2023</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Hora do holofone</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Noite de batalha GO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bonitinho">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Saiba mais
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li>
+                    <a class="dropdown-item" href="#">Entre em contato</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Referencias</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <h1>Raids Pokemon GO</h1>
+        <article>
+          <section>
+            <div class="raids">
+              <div>
+                <p>
+                  As Raid Battles ocorrem quando um Pokémon Boss assume o
+                  controle de um Ginásio. Seu objetivo é derrotar este poderoso
+                  Pokémon. Se você e seus colegas Treinadores forem
+                  bem-sucedidos, serão recompensados ​​com itens especiais e a
+                  chance de capturar aquele Pokémon. Você não pode fazer isso
+                  sozinho em sua maioria; você precisará da ajuda de outros
+                  Treinadores para invadir o Ginásio.
+                </p>
+              </div>
+              <div>
+                <p>
+                  As Raid Battles não são uma típica batalha de ginásio; seu
+                  oponente é mais difícil de derrotar do que a maioria dos
+                  outros Pokémon. As invasões têm 4 níveis de dificuldade: tier
+                  1, tier 3, tier 5 e Mega Raids. Quanto maior a dificuldade,
+                  mais forte o Raid Boss e mais jogadores você precisará para
+                  ter sucesso.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/150.png"
+                  alt="mewtwo"
+                  class="imagemLouca"
+                  id="mewtwo"
+                />
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/146.png"
+                  alt="moltres"
+                  class="imagemLouca"
+                  id="moltres"
+                />
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/244.png"
+                  alt="raicou"
+                  class="imagemLouca"
+                  id="raicou"
+                />
+                <img
+                  src="https://lh3.googleusercontent.com/UN2Jag4G-WAs30m3166HdZQhMdtzNg725pbqgiJs4tUiMv9n0kMvSqtzyhp46jIQyD7XWPkYwcrGWTbyP-ZigOadhjQ8UkueiPcTn4V5lC-ED-E=s0"
+                  alt="Raids"
+                  class="imagem-raid"
+                />
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/249.png"
+                  alt="Lugia"
+                  class="imagemLouca"
+                  id="lugia"
+                />
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/384.png"
+                  alt="Rayquaza"
+                  class="imagemLouca"
+                  id="rayquaza"
+                />
+                <img
+                  src="https://veekun.com/dex/media/pokemon/main-sprites/diamond-pearl/487.png"
+                  alt="Giratina"
+                  class="imagemLouca"
+                  id="giratina"
+                />
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="como-entrar">
+              <div class="passes">
+                <h2>Como entrar em uma Raid</h2>
+                <p>
+                  Passes de Reide são itens necessários para entrar em Batalhas
+                  de Raid. Existem ao todo tres tipos de passes:
+                </p>
+                <div class="tipos-de-passe">
+                  <p class="ingressos" id="passe-normal">Passe de Raid</p>
+                  <div>
+                    <img
+                      src="https://d2duuy9yo5pldo.cloudfront.net/niantic/8cf07390-02d4-403b-b1dc-252ce2148858-t.png"
+                      alt="Passe de Raid"
+                      width="150"
+                      class="img-passe"
+                    />
+                  </div>
+
+                  <p>
+                    Você pode ganhar um Raid Pass girando o PokeStop em um
+                    Ginásio. Você só pode ter um Raid Pass por vez e só pode
+                    receber um por dia. Este passe concede acesso a Batalhas de
+                    Raid de Nível 1-5.
+                  </p>
+                </div>
+                <div class="tipos-de-passe">
+                  <p class="ingressos" id="passe-premium">
+                    Passe de Batalha Premium
+                  </p>
+                  <div>
+                    <img
+                      src="https://d2duuy9yo5pldo.cloudfront.net/niantic/d2117a2e-5326-444a-b689-fb4e2ac36a64-t.png"
+                      alt="Passe de Raid"
+                      width="150"
+                      class="img-passe"
+                    />
+                  </div>
+
+                  <p>
+                    Se você já usou seu Raid Pass, poderá participar de outra
+                    Raid Battle comprando um Premium Battle Pass na Loja. Ao
+                    contrário do Raid Pass, você pode ter mais de um Premium
+                    Battle Pass em seu inventário por vez. Assim como o Passe de
+                    Reide, o Passe de Batalha Premium também concede acesso a
+                    Batalhas de Reide de Nível 1-5.
+                  </p>
+                </div>
+                <div class="tipos-de-passe">
+                  <p class="ingressos" id="passe-distancia">
+                    Passe de Raid Remoto
+                  </p>
+                  <div>
+                    <img
+                      id="passe-distancia"
+                      src="passe-distancia.png"
+                      alt="Passe de Raid"
+                      width="150"
+                      class="img-passe"
+                    />
+                  </div>
+                  <p>
+                    Com um Passe de Raid Remoto , os Treinadores podem
+                    participar de qualquer Batalha de Reide que esteja na tela
+                    Perto ou tocável na Visualização do Mapa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Participando de uma batalha de Raid</h2>
+            <p id="explicacao">
+              Uma vez que o ovo eclodir, o ataque começa e você tem 45 minutos
+              para derrotar o chefe. Qualquer número de treinadores pode
+              participar de um ataque, mas apenas em grupos de até 20
+              treinadores. Se você gostaria de estar no mesmo grupo que seus
+              amigos, você pode participar do ataque de forma privada. Caso
+              contrário, você será automaticamente combinado com outros
+              jogadores no lobby.
+            </p>
+            <div class="participar">
+              <div>
+                <p>
+                  1.Entre no Ginásio - Toque em um Ginásio enquanto uma invasão
+                  está em andamento. Para participar remotamente, você também
+                  pode ir para a tela Perto e tocar em "Visualizar" na invasão
+                  que deseja participar.
+                </p>
+                <img
+                  src="https://2.bp.blogspot.com/-nUEd-UlOUPE/WdmoiktQmAI/AAAAAAAAA_c/EV1AgkaUPq8DPSTC_wAjjn55XXnLRCdnACLcBGAs/s1600/raid_mapa.jpg"
+                  alt="participar"
+                />
+              </div>
+              <div>
+                <p>
+                  2.Junte-se à Batalha - Escolha como você gostaria de
+                  participar: Toque em Batalha para ser automaticamente
+                  combinado com outros jogadores. Toque em Participar de forma
+                  privada para entrar em um grupo existente. Você será
+                  solicitado a fornecer um código de grupo
+                </p>
+                <img
+                  src="https://2.bp.blogspot.com/-LuSS2IPpURk/WdmSOvBkHmI/AAAAAAAAA9Y/GjWnayP2PGczQYV7Smj7VSKCe1u3GPSXgCLcBGAs/s1600/entrada_raid.jpg"
+                  alt="participar"
+                />
+              </div>
+              <div>
+                <p>
+                  3.Use Raid Pass - Você trocará seu Passe por entrada no raide.
+                </p>
+                <img
+                  src="https://www.pokebip.com/pages/jeuxvideo/pokemon_go/images/raid04.png"
+                  alt="participar"
+                />
+              </div>
+              <div>
+                <p>
+                  4.Escolha seu Pokémon - Assim como em uma Batalha de Ginásio ,
+                  você escolherá 6 Pokémon para batalhar no ataque. Se você
+                  quiser que seus amigos participem do seu grupo, compartilhe o
+                  código do grupo exibido no canto superior direito.
+                </p>
+                <img
+                  src="https://d.newsweek.com/en/full/1609963/pokemon-go-invite-remote-raid-inviter.png?w=790&f=9be18303e5eb714f9cab5abe419da238"
+                  alt="participar"
+                />
+              </div>
+              <div>
+                <p>5.Começar a Batalha</p>
+                <img
+                  src="https://d2duuy9yo5pldo.cloudfront.net/niantic/6d1a358d-5d96-4f3e-8cde-4add4ac1f60a-2t.jpg"
+                  alt="participar"
+                />
+              </div>
+              <div>
+                <p>6.Capturar a Recompensa</p>
+                <img
+                  src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-26-at-4.25.50-AM.jpg"
+                  alt="participar"
+                />
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="como-batalhar">
+              <h2>Batalhar em Raid</h2>
+              <p>
+                Uma vez na batalha, você pode realizar uma das três ações
+                diferentes:
+              </p>
+              <div class="acoes">
+                <img
+                  src="https://d2duuy9yo5pldo.cloudfront.net/niantic/69c4d679-041a-4dbf-8081-fee72762feb3-t.png"
+                />
+                <p>Ataque Rápido</p>
+                <p>
+                  Toque em qualquer lugar na tela para realizar um ataque
+                  rápido. Ataques Rápidos carregam seu medidor de Ataque
+                  Carregado.
+                </p>
+              </div>
+              <div class="acoes">
+                <img
+                  src="https://d2duuy9yo5pldo.cloudfront.net/niantic/358b5295-eaa3-4d9b-b690-b38290b546ba-t.png"
+                />
+                <p>Ataque Carregado</p>
+                <p>
+                  Quando o medidor de Ataque Carregado estiver cheio, o botão
+                  Ataque Carregado será ativado. Toque no botão para realizar um
+                  ataque carregado. Ataque Carregado causa grandes quantidades
+                  de dano.
+                </p>
+              </div>
+              <div class="acoes">
+                <img
+                  src="https://d2duuy9yo5pldo.cloudfront.net/niantic/1d0ef5a2-17fb-401e-9f7b-4b15b0ef6dd8-t.png"
+                />
+                <p>Desviar</p>
+                <p>
+                  Deslize para a esquerda ou para a direita para evitar ataques
+                  do oponente. A qualquer momento durante a batalha, você pode
+                  fugir para curar seu Pokémon usando Potions ou Revives e
+                  depois voltar à batalha.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="raids-disponiveis">
+              <div class="card-raid">
+                <div class="img-raid" id="img-mega-raid">
+                  <img
+                    src="https://assets.thesilphroad.com/img/pogo-assets/shiny-icon.png"
+                    width="30"
+                    alt="shiny-icon"
+                    class="shiny"
+                  >
+                  <img
+                    src="https://gamepress.gg/pokemongo/sites/pokemongo/files/styles/240w/public/2021-03/pokemon_icon_310_51.png?itok=s2o0Sfgh"
+                    width="215"
+                  />
+                </div>
+                <div id="info-card1" class="info">
+                  <div>
+                    <p class="nome-raid">Mega Manectric</p>
+                    <div class="raid-info">
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-fog.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-rainy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="estrela">
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                    </div>
+                    <p>CP Range: 1,267 - 1,337</p>
+                    <p>Bosted CP: 1,585 - 1,670</p>
+                    <p class="maiores">Maiores Counters:</p>
+                    <div class="counters">
+                      <div>
+                        <input type="checkbox" id="card1" />
+                        <div class="container-imgs">
+                          <div>
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/garchomp.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/landorus.png"
+                            /><img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/rhyperior.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/groudon.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/mamoswine.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/excadrill.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                          </div>
+                          <div class="setinha">
+                            <label class="barra1" for="card1"></label>
+                            <label class="barra2" for="card1"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-raid">
+                <div class="img-raid" id="img-lendario-raid">
+                  <img
+                    src="https://assets.thesilphroad.com/img/pogo-assets/shiny-icon.png"
+                    width="30"
+                    alt="shiny-icon"
+                    class="shiny"
+                  >
+                  <img
+                    src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/717.png"
+                  />
+                </div>
+                <div id="info-card2" class="info">
+                  <div>
+                    <p class="nome-raid">Yveltal</p>
+                    <div class="raid-info">
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-fog.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-windy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-dark.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-flying.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="estrela">
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                    </div>
+                    <p>CP Range: 2,073 - 2,160</p>
+                    <p>Bosted CP: 2,591 - 2,700</p>
+                    <p class="maiores">Maiores Counters:</p>
+                    <div class="counters">
+                      <div>
+                        <input type="checkbox" id="card2" />
+                        <div class="container-imgs">
+                          <div>
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/raikou.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/zekrom.png"
+                            /><img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/zapdos.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/electivire.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            
+                          </div>
+                          <div class="setinha">
+                            <label class="barra1" for="card2"></label>
+                            <label class="barra2" for="card2"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-raid">
+                <div class="img-raid" id="img-tier3-raid">
+                  <img
+                    src="https://assets.thesilphroad.com/img/pogo-assets/shiny-icon.png"
+                    width="30"
+                    alt="shiny-icon"
+                    class="shiny"
+                  >
+                  <img
+                    src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/176.png"
+                    width="215"
+                  />
+                </div>
+                <div id="info-card3" class="info">
+                  <div>
+                    <p class="nome-raid">Togetic</p>
+                    <div class="raid-info">
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-cloudy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-windy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-fairy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-flying.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="estrela">
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                    </div>
+                    <p>CP Range: 917 - 976</p>
+                    <p>Bosted CP: 1,147 - 1,220</p>
+                    <p class="maiores">Maiores Counters:</p>
+                    <div class="counters">
+                      <div>
+                        <input type="checkbox" id="card3" />
+                        <div class="container-imgs">
+                          <div>
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/metagross.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/zekrom.png"
+                            /><img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/zapdos.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/raikou.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/manectric.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                          </div>
+                          <div class="setinha">
+                            <label class="barra1" for="card3"></label>
+                            <label class="barra2" for="card3"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-raid">
+                <div class="img-raid" id="img-tier1-raid">
+                  <img
+                    src="https://assets.thesilphroad.com/img/pogo-assets/shiny-icon.png"
+                    width="30"
+                    alt="shiny-icon"
+                    class="shiny"
+                  >
+                  <img
+                    src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/459.png"
+                    width="215"
+                  />
+                </div>
+                <div id="info-card4" class="info">
+                  <div>
+                    <p class="nome-raid">Snover</p>
+                    <div class="raid-info">
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-fog.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/weather-snowy.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-ice.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                      <img
+                        src="https://assets.thesilphroad.com/img/pogo-assets/type-grass.png"
+                        alt="info"
+                        class="imagem-raid-card"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="estrela">
+                      <img
+                        alt="estrela"
+                        src="https://cdn-icons-png.flaticon.com/512/148/148841.png"
+                        width="15"
+                      />
+                    </div>
+                    <p>CP Range: 463 - 504</p>
+                    <p>Bosted CP: 579 - 631</p>
+                    <p class="maiores">Maiores Counters:</p>
+                    <div class="counters">
+                      <div>
+                        <input type="checkbox" id="card4" />
+                        <div class="container-imgs">
+                          <div>
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/moltres.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/entei.png"
+                            /><img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/ho-oh.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/chandelure.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/charizard.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                            <img
+                              alt="counters"
+                              src="https://img.pokemondb.net/sprites/sword-shield/icon/gardevoir.png"
+                            />
+                          </div>
+                          <div class="setinha">
+                            <label class="barra1" for="card4"></label>
+                            <label class="barra2" for="card4"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            <p class="aviso">*As raids mudam com o tempo</p>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <p>
+            Version 1.28.5.12 &copy; 2021 PokeBattle LLC, released under the MIT
+            license | Privacy Policy
+          </p>
+          <p>
+            Pokémon and Pokémon GO are copyright of The Pokémon Company,
+            Niantic, Inc., and Nintendo. All trademarked images and names are
+            property of their respective owners, and any such material is used
+            on this site for educational purposes only. PvPoke LLC has no
+            affiliation with The Pokémon Company, Niantic, Inc., or Nintendo.
+          </p>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <p>@markes_guilherme</p>
+            <p>Guilherme Marques</p>
+            <p>+55(18)99663-0552</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
